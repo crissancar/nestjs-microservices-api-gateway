@@ -2,10 +2,10 @@ import { Inject, Injectable } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
 import { firstValueFrom, timeout } from 'rxjs';
 
-import { EventPayloadFactory } from '../../../../shared/microservices/shared/services/event-payload-factory.service';
-import { LoggerFactory } from '../../../../shared/microservices/shared/services/logger-factory.service';
-import { UserDomainEvents } from '../../../../shared/microservices/users/enums/user-domain-events.enum';
-import { UserProxies } from '../../../../shared/microservices/users/enums/user-proxies.enum';
+import { EventPayloadFactory } from '../../../../shared/app/modules/shared/services/event-payload-factory.service';
+import { LoggerFactory } from '../../../../shared/app/modules/shared/services/logger-factory.service';
+import { UserDomainEvents } from '../../../../shared/app/modules/users/enums/user-domain-events.enum';
+import { UserProxies } from '../../../../shared/app/modules/users/enums/user-proxies.enum';
 import { usersConfig } from '../config/users.config';
 import { FindUserByIdRequest } from '../dtos/find-user-by-id-request.dto';
 import { FindUserByIdResponse } from '../dtos/find-user-by-id-response.dto';

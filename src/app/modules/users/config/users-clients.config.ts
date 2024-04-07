@@ -1,8 +1,8 @@
 import { ClientProviderOptions } from '@nestjs/microservices';
 
-import { ClientConfigFactory } from '../../../../shared/microservices/shared/services/client-config-factory.service';
-import { UserProxies } from '../../../../shared/microservices/users/enums/user-proxies.enum';
-import { UserQueues } from '../../../../shared/microservices/users/enums/user-queues.enum';
+import { ClientConfigFactory } from '../../../../shared/app/modules/shared/services/client-config-factory.service';
+import { UserProxies } from '../../../../shared/app/modules/users/enums/user-proxies.enum';
+import { UserQueues } from '../../../../shared/app/modules/users/enums/user-queues.enum';
 
 export const usersClientsConfig: Array<ClientProviderOptions> = [
 	ClientConfigFactory.create(UserProxies.CREATE, UserQueues.CREATE),

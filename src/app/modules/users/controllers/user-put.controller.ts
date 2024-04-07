@@ -1,6 +1,6 @@
 import { Body, Controller, HttpCode, HttpStatus, Param, Put } from '@nestjs/common';
 
-import { LoggerFactory } from '../../../../shared/microservices/shared/services/logger-factory.service';
+import { LoggerFactory } from '../../../../shared/app/modules/shared/services/logger-factory.service';
 import { EndpointOwnerAuthentication } from '../../shared/decorators/endpoint-owner-authentication.decorator';
 import { UserAudiences } from '../../shared/enums/user-audiences.enum';
 import { UpdateUserSwagger } from '../config/swagger/decorators/update-user-swagger.decorator';

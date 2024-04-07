@@ -1,6 +1,6 @@
 import { Body, Controller, HttpCode, HttpStatus, Post } from '@nestjs/common';
 
-import { LoggerFactory } from '../../../../shared/microservices/shared/services/logger-factory.service';
+import { LoggerFactory } from '../../../../shared/app/modules/shared/services/logger-factory.service';
 import { ApiKeyAudiences } from '../../api-keys/enums/api-key-audiences.enum';
 import { EndpointApiKeyAuthentication } from '../../shared/decorators/endpoint-api-key-authentication.decorator';
 import { UuidGenerator } from '../../shared/decorators/uuid-generator.decorator';

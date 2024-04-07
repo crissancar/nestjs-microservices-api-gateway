@@ -1,8 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsOptional, IsString } from 'class-validator';
 
-import { Exact } from '../../../../shared/microservices/shared/types/exact.type';
-import { UpdateUserRequestInterface } from '../../../../shared/webapp/api/users/interfaces/update-user-request.interface';
+import { Exact } from '../../../../shared/app/modules/shared/types/exact.type';
+import { UpdateUserRequestInterface } from '../../../../shared/app/modules/users/interfaces/update-user-request.interface';
 import { userPropertiesSwagger } from '../config/swagger/properties/user-properties.swagger';
 
 const { name, email } = userPropertiesSwagger;

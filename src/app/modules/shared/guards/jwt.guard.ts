@@ -3,7 +3,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { Request } from 'express';
 
 import { CORRELATION_ID_HEADER } from '../../../../config/middlewares/correlation-id.middleware';
-import { User } from '../../../../shared/webapp/api/users/models/user.model';
+import { User } from '../../../../shared/app/modules/users/models/user.model';
 import { InvalidTokenException } from '../../auth/exceptions/invalid-token.exception';
 import { jwtGuardConstants } from '../config/constants/jwt-guard.constants';
 

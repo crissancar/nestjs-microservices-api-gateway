@@ -2,7 +2,7 @@ import * as colorette from 'colorette';
 import { pid } from 'process';
 import * as process from 'process';
 
-import { LoggerFactory } from '../../shared/microservices/shared/services/logger-factory.service';
+import { LoggerFactory } from '../../shared/app/modules/shared/services/logger-factory.service';
 import { config } from '../app';
 
 const { api, project, env } = config;

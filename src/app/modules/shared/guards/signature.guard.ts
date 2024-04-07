@@ -5,7 +5,7 @@ import { Request } from 'express';
 import { Observable } from 'rxjs';
 
 import { config } from '../../../../config/app/index';
-import { LoggerFactory } from '../../../../shared/microservices/shared/services/logger-factory.service';
+import { LoggerFactory } from '../../../../shared/app/modules/shared/services/logger-factory.service';
 import { signatureGuardConstants } from '../config/constants/signature-guard.constants';
 import { InvalidSignatureException } from '../exceptions/invalid-signature.exception';
 

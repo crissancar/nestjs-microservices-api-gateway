@@ -1,7 +1,7 @@
 import { Controller, Post } from '@nestjs/common';
 
-import { AuthenticatedUser } from '../../../../shared/microservices/auth/dtos/authenticated-user.dto';
-import { LoggerFactory } from '../../../../shared/microservices/shared/services/logger-factory.service';
+import { AuthenticatedUser } from '../../../../shared/app/modules/auth/dtos/authenticated-user.dto';
+import { LoggerFactory } from '../../../../shared/app/modules/shared/services/logger-factory.service';
 import { ApiKeyAudiences } from '../../api-keys/enums/api-key-audiences.enum';
 import { EndpointAuthentication } from '../../shared/decorators/endpoint-authentication.decorator';
 import { UserAudiences } from '../../shared/enums/user-audiences.enum';

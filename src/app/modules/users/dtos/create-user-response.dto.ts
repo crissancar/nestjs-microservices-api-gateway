@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-import { Exact } from '../../../../shared/microservices/shared/types/exact.type';
-import { CreateUserResponseInterface } from '../../../../shared/webapp/api/users/interfaces/create-user-response.interface';
+import { Exact } from '../../../../shared/app/modules/shared/types/exact.type';
+import { CreateUserResponseInterface } from '../../../../shared/app/modules/users/interfaces/create-user-response.interface';
 import { userPropertiesSwagger } from '../config/swagger/properties/user-properties.swagger';
 
 const { id, name, email } = userPropertiesSwagger;

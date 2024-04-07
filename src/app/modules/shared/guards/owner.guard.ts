@@ -1,7 +1,7 @@
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Request } from 'express';
 
-import { User } from '../../../../shared/webapp/api/users/models/user.model';
+import { User } from '../../../../shared/app/modules/users/models/user.model';
 import { ownerGuardConstants } from '../config/constants/owner-guard.constants';
 import { UserIsNotOwnerException } from '../exceptions/user-is-not-owner.exception';
 

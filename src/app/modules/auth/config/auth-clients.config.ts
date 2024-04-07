@@ -1,8 +1,8 @@
 import { ClientProviderOptions } from '@nestjs/microservices';
 
-import { AuthProxies } from '../../../../shared/microservices/auth/enums/auth-proxies.enum';
-import { AuthQueues } from '../../../../shared/microservices/auth/enums/auth-queues.enum';
-import { ClientConfigFactory } from '../../../../shared/microservices/shared/services/client-config-factory.service';
+import { AuthProxies } from '../../../../shared/app/modules/auth/enums/auth-proxies.enum';
+import { AuthQueues } from '../../../../shared/app/modules/auth/enums/auth-queues.enum';
+import { ClientConfigFactory } from '../../../../shared/app/modules/shared/services/client-config-factory.service';
 
 export const authClientsConfig: Array<ClientProviderOptions> = [
 	ClientConfigFactory.create(AuthProxies.AUTH_API_KEY, AuthQueues.AUTH_API_KEY),

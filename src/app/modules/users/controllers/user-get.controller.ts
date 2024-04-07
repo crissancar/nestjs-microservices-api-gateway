@@ -2,7 +2,7 @@ import { Controller, Get, Param, Query, Req } from '@nestjs/common';
 import { Request } from 'express';
 
 import { CORRELATION_ID_HEADER } from '../../../../config/middlewares/correlation-id.middleware';
-import { LoggerFactory } from '../../../../shared/microservices/shared/services/logger-factory.service';
+import { LoggerFactory } from '../../../../shared/app/modules/shared/services/logger-factory.service';
 import { EndpointAuthentication } from '../../shared/decorators/endpoint-authentication.decorator';
 import { EndpointOwnerAuthentication } from '../../shared/decorators/endpoint-owner-authentication.decorator';
 import { UserAudiences } from '../../shared/enums/user-audiences.enum';

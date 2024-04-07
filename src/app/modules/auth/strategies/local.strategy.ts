@@ -4,8 +4,8 @@ import { Request } from 'express';
 import { Strategy } from 'passport-local';
 
 import { CORRELATION_ID_HEADER } from '../../../../config/middlewares/correlation-id.middleware';
+import { AuthenticatedUser } from '../../../../shared/app/modules/auth/dtos/authenticated-user.dto';
 import { authConfig } from '../config/auth.config';
-import { AuthenticatedUser } from '../../../../shared/microservices/auth/dtos/authenticated-user.dto';
 import { Authenticator } from '../services/authenticator.service';
 
 const { localStrategy } = authConfig;

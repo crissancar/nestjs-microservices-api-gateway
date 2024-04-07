@@ -3,7 +3,7 @@ import { Response } from 'express';
 
 import { ValidationException } from '../../app/modules/shared/exceptions/validation.exception';
 import { HTTPExceptionData } from '../../app/modules/shared/interfaces/http-exception-data.interface';
-import { LoggerFactory } from '../../shared/microservices/shared/services/logger-factory.service';
+import { LoggerFactory } from '../../shared/app/modules/shared/services/logger-factory.service';
 
 const logger = LoggerFactory.create('ExceptionsFilter');
 

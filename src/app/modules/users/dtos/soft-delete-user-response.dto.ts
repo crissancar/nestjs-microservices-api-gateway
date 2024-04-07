@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-import { Exact } from '../../../../shared/microservices/shared/types/exact.type';
-import { SoftDeleteUserResponseInterface } from '../../../../shared/webapp/api/users/interfaces/soft-delete-user-response.interface';
+import { Exact } from '../../../../shared/app/modules/shared/types/exact.type';
+import { SoftDeleteUserResponseInterface } from '../../../../shared/app/modules/users/interfaces/soft-delete-user-response.interface';
 import { userPropertiesSwagger } from '../config/swagger/properties/user-properties.swagger';
 
 const { softDeletedMessage } = userPropertiesSwagger;

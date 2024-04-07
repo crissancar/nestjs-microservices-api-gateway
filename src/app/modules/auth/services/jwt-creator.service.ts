@@ -2,10 +2,10 @@ import { BadRequestException, HttpStatus, Inject, Injectable } from '@nestjs/com
 import { ClientProxy } from '@nestjs/microservices';
 import { firstValueFrom, timeout } from 'rxjs';
 
-import { AuthDomainEvents } from '../../../../shared/microservices/auth/enums/auth-domain-events.enum';
-import { AuthProxies } from '../../../../shared/microservices/auth/enums/auth-proxies.enum';
-import { EventPayloadFactory } from '../../../../shared/microservices/shared/services/event-payload-factory.service';
-import { LoggerFactory } from '../../../../shared/microservices/shared/services/logger-factory.service';
+import { AuthDomainEvents } from '../../../../shared/app/modules/auth/enums/auth-domain-events.enum';
+import { AuthProxies } from '../../../../shared/app/modules/auth/enums/auth-proxies.enum';
+import { EventPayloadFactory } from '../../../../shared/app/modules/shared/services/event-payload-factory.service';
+import { LoggerFactory } from '../../../../shared/app/modules/shared/services/logger-factory.service';
 import { CreateUserTokensResponse } from '../dtos/create-user-tokens.response.dto';
 import { CreateUserTokensRequest } from '../dtos/create-user-tokens-request.dto';
 import { InvalidCredentialsException } from '../exceptions/invalid-credentials.exception';

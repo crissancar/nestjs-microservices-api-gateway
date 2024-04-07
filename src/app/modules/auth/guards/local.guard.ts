@@ -2,8 +2,8 @@ import { ExecutionContext, Injectable } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { Request } from 'express';
 
+import { AuthenticatedUser } from '../../../../shared/app/modules/auth/dtos/authenticated-user.dto';
 import { authConfig } from '../config/auth.config';
-import { AuthenticatedUser } from '../../../../shared/microservices/auth/dtos/authenticated-user.dto';
 import { InvalidCredentialsException } from '../exceptions/invalid-credentials.exception';
 
 const { localGuard } = authConfig;

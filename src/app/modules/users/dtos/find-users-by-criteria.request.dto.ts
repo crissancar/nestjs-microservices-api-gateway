@@ -1,11 +1,11 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsOptional, IsString } from 'class-validator';
 
-import { Exact } from '../../../../shared/microservices/shared/types/exact.type';
-import { SortColumn } from '../../../../shared/webapp/api/shared/types/sort-column.type';
-import { SortOrder } from '../../../../shared/webapp/api/shared/types/sort-order.type';
-import { FindUsersByCriteriaRequestInterface } from '../../../../shared/webapp/api/users/interfaces/find-users-by-criteria-request.interface';
-import { User } from '../../../../shared/webapp/api/users/models/user.model';
+import { Exact } from '../../../../shared/app/modules/shared/types/exact.type';
+import { SortColumn } from '../../../../shared/app/modules/shared/types/sort-column.type';
+import { SortOrder } from '../../../../shared/app/modules/shared/types/sort-order.type';
+import { FindUsersByCriteriaRequestInterface } from '../../../../shared/app/modules/users/interfaces/find-users-by-criteria-request.interface';
+import { User } from '../../../../shared/app/modules/users/models/user.model';
 import { ValidatePage } from '../../shared/decorators/validate-page.decorator';
 import { ValidateSortColumn } from '../../shared/decorators/validate-sort-column.decorator';
 import { ValidateSortOrder } from '../../shared/decorators/validate-sort-order.decorator';

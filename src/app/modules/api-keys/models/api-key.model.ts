@@ -1,4 +1,4 @@
-import { Timestamp } from '../../../../shared/webapp/api/shared/models/timestamp.model';
+import { Timestamp } from '../../../../shared/app/modules/shared/models/timestamp.model';
 import { ApiKeyAudiences } from '../enums/api-key-audiences.enum';
 
 export class ApiKey extends Timestamp {

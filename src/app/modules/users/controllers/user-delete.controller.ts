@@ -1,6 +1,6 @@
 import { Controller, Delete, HttpCode, HttpStatus, Param } from '@nestjs/common';
 
-import { LoggerFactory } from '../../../../shared/microservices/shared/services/logger-factory.service';
+import { LoggerFactory } from '../../../../shared/app/modules/shared/services/logger-factory.service';
 import { UserAudiences } from '../../shared/enums/user-audiences.enum';
 import { SoftDeleteUserSwagger } from '../config/swagger/decorators/soft-delete-user-swagger.decorator';
 import { usersConfig } from '../config/users.config';

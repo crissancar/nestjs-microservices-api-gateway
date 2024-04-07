@@ -1,4 +1,4 @@
-import { AuthenticatedUser } from '../../../../shared/microservices/auth/dtos/authenticated-user.dto';
+import { AuthenticatedUser } from '../../../../shared/app/modules/auth/dtos/authenticated-user.dto';
 
 export class CreateUserTokensRequest {
 	readonly correlation: never;

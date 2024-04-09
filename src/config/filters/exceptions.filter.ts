@@ -1,8 +1,8 @@
 import { ArgumentsHost, Catch, ExceptionFilter, HttpException, HttpStatus } from '@nestjs/common';
 import { Response } from 'express';
 
-import { ValidationException } from '../../app/modules/shared/exceptions/validation.exception';
-import { HTTPExceptionData } from '../../app/modules/shared/interfaces/http-exception-data.interface';
+import { ValidationException } from '../../app/modules/shared/domain/exceptions/validation.exception';
+import { HTTPExceptionData } from '../../app/modules/shared/domain/interfaces/http-exception-data.interface';
 import { LoggerFactory } from '../../shared/app/modules/shared/services/logger-factory.service';
 
 const logger = LoggerFactory.create('ExceptionsFilter');

@@ -1,4 +1,4 @@
-import { authSwaggerConfig } from './swagger/auth-swagger.config';
+import { authSwaggerConfig } from '../infrastructure/swagger/auth-swagger.config';
 
 export const authConfig = {
 	globalRoute: 'auth',

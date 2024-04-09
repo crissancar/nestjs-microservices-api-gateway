@@ -1,5 +1,5 @@
 import { sharedPropertiesSwagger } from '../../../../shared/config/swagger/shared-properties.swagger';
-import { UserAudiences } from '../../../../shared/enums/user-audiences.enum';
+import { UserAudiences } from '../../../../shared/domain/enums/user-audiences.enum';
 
 export const userPropertiesSwagger = {
 	...sharedPropertiesSwagger,

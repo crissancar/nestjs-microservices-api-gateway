@@ -4,9 +4,9 @@ import { APP_FILTER, APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import { config } from '../config/app';
 import { ExceptionsFilter } from '../config/filters/exceptions.filter';
 import { TransformInterceptor } from '../config/interceptors/transform.interceptor';
-import { ValidationException } from './modules/shared/exceptions/validation.exception';
-import { BlacklistIPGuard } from './modules/shared/guards/blacklist-ip.guard';
-import { SignatureGuard } from './modules/shared/guards/signature.guard';
+import { ValidationException } from './modules/shared/domain/exceptions/validation.exception';
+import { BlacklistIPGuard } from './modules/shared/infrastructure/guards/blacklist-ip.guard';
+import { SignatureGuard } from './modules/shared/infrastructure/guards/signature.guard';
 
 export const providersConfig: Array<Provider> = [
 	{

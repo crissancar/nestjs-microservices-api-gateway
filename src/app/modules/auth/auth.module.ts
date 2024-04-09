@@ -5,13 +5,13 @@ import { PassportModule } from '@nestjs/passport';
 
 import { ApiKeysModule } from '../api-keys/api-keys.module';
 import { UsersModule } from '../users/users.module';
+import { Authenticator } from './application/services/authenticator.service';
+import { JwtCreator } from './application/services/jwt-creator.service';
 import { authClientsConfig } from './config/auth-clients.config';
 import { jwtConfig } from './config/jwt.config';
-import { AuthPostController } from './controllers/auth-post.controller';
-import { Authenticator } from './services/authenticator.service';
-import { JwtCreator } from './services/jwt-creator.service';
-import { JwtStrategy } from './strategies/jwt.strategy';
-import { LocalStrategy } from './strategies/local.strategy';
+import { AuthPostController } from './infrastructure/controllers/auth-post.controller';
+import { JwtStrategy } from './infrastructure/strategies/jwt.strategy';
+import { LocalStrategy } from './infrastructure/strategies/local.strategy';
 
 @Module({
 	imports: [

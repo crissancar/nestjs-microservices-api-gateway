@@ -6,7 +6,7 @@ import { rateLimitConfig } from './rate-limit.config';
 export const apiConfig = {
 	api: {
 		url: null as string,
-		port: 9977,
+		port: 3000,
 		version: 'v1',
 		responseTime: true,
 		cors: corsConfig,

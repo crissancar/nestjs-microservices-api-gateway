@@ -1,7 +1,4 @@
 import { DocumentBuilder, OpenAPIObject, SwaggerCustomOptions } from '@nestjs/swagger';
-import { writeFileSync } from 'fs';
-import { mkdirp } from 'mkdirp';
-import path from 'path';
 
 import { config } from '../app';
 import { RedocOptions } from './redoc-options.interface';
@@ -40,21 +37,13 @@ export class SwaggerConfig {
 			tagGroups: [
 				{
 					name: 'Endpoints',
-					tags: ['Auth', 'FAQs', 'Files', 'Forgot passwords', 'Images', 'Policies', 'Users'],
+					tags: ['Auth', 'Users'],
 				},
 			],
 		};
 	}
 
 	static path(): string {
-		return 'documentation';
-	}
-
-	static saveDocument(document: OpenAPIObject): void {
-		mkdirp.sync(`${PWD}/artifacts/swagger`);
-
-		const outputPath = path.resolve(`${PWD}`, 'artifacts/swagger', 'swagger.json');
-
-		writeFileSync(outputPath, JSON.stringify(document), { encoding: 'utf8' });
+		return 'docs';
 	}
 }

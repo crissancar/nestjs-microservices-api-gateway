@@ -1,7 +1,7 @@
 export const projectConfig = {
 	project: {
-		appName: 'Microservices API Skeleton',
-		description: 'Microservices API boilerplate with NestJS',
+		appName: 'NestJS Microservices',
+		description: 'Microservices API example with NestJS',
 		poweredBy: 'Cristian',
 		email: 'devcristiansanchez@gmail.com',
 		url: 'https://github.com/crissancar',

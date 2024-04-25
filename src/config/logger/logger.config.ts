@@ -87,22 +87,14 @@ export const loggerConfig: Params = {
 };
 
 function transportConfig(): pino.TransportSingleOptions {
-	return logger.loki
-		? {
-				target: 'pino/file',
-				options: {
-					destination: 'artifacts/logs/app.log',
-					mkdir: true,
-				},
-		  }
-		: {
-				target: 'pino-pretty',
-				options: {
-					messageKey: 'message',
-					ignore: 'pid,hostname,time',
-					colorize: true,
-				},
-		  };
+	return {
+		target: 'pino-pretty',
+		options: {
+			messageKey: 'message',
+			ignore: 'pid,hostname,time',
+			colorize: true,
+		},
+	};
 }
 
 function formattersConfig(): object {

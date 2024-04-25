@@ -5,12 +5,6 @@ export const environmentVariablesConfig = {
 		salt: null as number,
 		pepper: null as string,
 	},
-	client: {
-		signature: {
-			enabled: null as boolean,
-			publicKey: null as string,
-		},
-	},
 	crypto: {
 		algorithm: null as CipherCCMTypes,
 		iv: null as BinaryLike,
@@ -46,6 +40,5 @@ export const environmentVariablesConfig = {
 	},
 	logger: {
 		level: null as string,
-		loki: null as boolean,
 	},
 };

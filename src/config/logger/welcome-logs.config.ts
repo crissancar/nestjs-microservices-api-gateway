@@ -1,5 +1,4 @@
 import * as colorette from 'colorette';
-import { pid } from 'process';
 import * as process from 'process';
 
 import { LoggerFactory } from '../../shared/app/modules/shared/services/logger-factory.service';
@@ -13,7 +12,6 @@ export class WelcomeLogs {
 	static apiUrl = api.url || `http://localhost:${api.port}`;
 	static apiVersion = api.version;
 	static projectName = project.appName;
-	static pid = pid;
 	static environment = config.environment;
 	static PWD = config.PWD;
 	static showEnv = env.show;
@@ -21,7 +19,6 @@ export class WelcomeLogs {
 	static run(): void {
 		logger.log(`${this.projectName}'s magic happens at ${this.apiUrl}/${this.apiVersion}`);
 		logger.log(`Environment: ${this.environment}`);
-		logger.log(`PID: ${this.pid || 'not forked'}`);
 		logger.log(`Root: ${this.PWD}`);
 		if (this.showEnv) {
 			const apiGatewayEnv = Object.fromEntries(

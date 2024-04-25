@@ -54,17 +54,11 @@ async function bootstrap(): Promise<void> {
 
 function setSwagger(app: INestApplication): void {
 	const config = SwaggerConfig.documentBuilder();
-
+	const path = SwaggerConfig.path();
 	const document = SwaggerModule.createDocument(app, config);
+	const customOptions = SwaggerConfig.customOptions();
 
-	SwaggerConfig.saveDocument(document);
-
-	if (!api.documentation.redoc) {
-		const path = SwaggerConfig.path();
-		const customOptions = SwaggerConfig.customOptions();
-
-		SwaggerModule.setup(path, app, document, customOptions);
-	}
+	SwaggerModule.setup(path, app, document, customOptions);
 }
 
 void bootstrap();

@@ -1,12 +1,10 @@
 import { Provider, ValidationError, ValidationPipe } from '@nestjs/common';
 import { APP_FILTER, APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 
-import { config } from '../config/app';
 import { ExceptionsFilter } from '../config/filters/exceptions.filter';
 import { TransformInterceptor } from '../config/interceptors/transform.interceptor';
 import { ValidationException } from './modules/shared/domain/exceptions/validation.exception';
 import { BlacklistIPGuard } from './modules/shared/infrastructure/guards/blacklist-ip.guard';
-import { SignatureGuard } from './modules/shared/infrastructure/guards/signature.guard';
 
 export const providersConfig: Array<Provider> = [
 	{
@@ -30,12 +28,4 @@ export const providersConfig: Array<Provider> = [
 				forbidNonWhitelisted: true,
 			}),
 	},
-	...(config.client.signature.enabled
-		? [
-				{
-					provide: APP_GUARD,
-					useClass: SignatureGuard,
-				},
-			]
-		: []),
 ];
